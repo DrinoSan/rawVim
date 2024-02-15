@@ -3,6 +3,9 @@ let mapleader=" "
 set path+=**
 set wildmenu
 
+syntax on
+filetype on
+
 set tabstop=3
 set shiftwidth=3
 set smartindent
