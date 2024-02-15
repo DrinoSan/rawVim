@@ -15,6 +15,7 @@ set nohlsearch
 set expandtab
 set undodir=~/.vim/undodir
 set undofile
+set nocompatible
  
 nnoremap <leader>x *``cgn
 nnoremap <leader>X #``cgn
