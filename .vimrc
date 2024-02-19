@@ -33,8 +33,6 @@ set laststatus=2
 " :help wildignore
 
 
-
-
 " For more stuff:
 " :help netrw-browse-maps
 let g:netrw_banner=0        " disable annoying banner
@@ -46,6 +44,9 @@ let g:netrw_liststyle=3     " tree view
 
 nnoremap <leader>x *``cgn
 nnoremap <leader>X #``cgn
+
+nnoremap <leader>n :cnext<CR>
+nnoremap <leader>p :cprev<CR>
 
 "xnoremap J :m '>+1<CR>gv=gv<CR>
 "xnoremap K :m '>-2<CR>gv=gv<CR>
