@@ -53,3 +53,6 @@ nnoremap <leader>p :cprev<CR>
 
 nnoremap <silent> <C-d> <C-d>zz
 nnoremap <silent> <C-u> <C-u>zz
+
+
+nnoremap <leader>bg :find /opt/homebrew/include/**/
