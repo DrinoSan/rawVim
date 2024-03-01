@@ -20,6 +20,10 @@ set ruler
 set laststatus=2
 set noswapfile
 
+" Man pages it is 
+runtime ftplugin/man.vim
+set keywordprg=:Man
+
 "nnoremap <leader>f :!git-clang-format -f %<CR>
 
 " Using vimgrep to find stuff if ctags doesnot work
