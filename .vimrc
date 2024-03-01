@@ -18,6 +18,7 @@ set undofile
 set nocompatible
 set ruler
 set laststatus=2
+set noswapfile
 
 "nnoremap <leader>f :!git-clang-format -f %<CR>
 
