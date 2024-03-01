@@ -33,6 +33,7 @@ set noswapfile
 "     :set wildignore+=objd/**,obj/**,*.tmp,test.c
 " :help wildignore
 
+set wildignore+=objd/**,obj/**,*.tmp,*.o,*.d
 
 " For more stuff:
 " :help netrw-browse-maps
