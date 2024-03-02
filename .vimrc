@@ -19,6 +19,7 @@ set nocompatible
 set ruler
 set laststatus=2
 set noswapfile
+set showcmd
 
 " Man pages it is 
 runtime ftplugin/man.vim
