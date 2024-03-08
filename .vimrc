@@ -20,6 +20,7 @@ set ruler
 set laststatus=2
 set noswapfile
 set showcmd
+set nowrap
 
 " Man pages it is 
 runtime ftplugin/man.vim
