@@ -26,6 +26,9 @@ set nowrap
 runtime ftplugin/man.vim
 set keywordprg=:Man
 
+" Remove whitespace on space of each line
+autocmd BufWritePre * :%s/\s\+$//e
+
 "nnoremap <leader>f :!git-clang-format -f %<CR>
 
 " Using vimgrep to find stuff if ctags doesnot work
