@@ -22,14 +22,23 @@ set noswapfile
 set showcmd
 set nowrap
 
-" Man pages it is 
+" Man pages it is
 runtime ftplugin/man.vim
 set keywordprg=:Man
 
 " Remove whitespace on space of each line
 autocmd BufWritePre * :%s/\s\+$//e
 
-"nnoremap <leader>f :!git-clang-format -f %<CR>
+"## LSP FAKE
+"\<CR\> = CTRL
+"CTAGS "LSP"
+"`<CR>]` to jump to a tag under the cursor
+"`g<CR>]` to get a listing of all matching tags
+"`<CR>t` to jump _back_ up the tag stack
+
+"nnoremap <leader>f :!git-clang-format -f %<CR> source %
+nnoremap <leader>f :!git-clang-format -f %<CR> \| source % \| normal! <Esc>
+
 
 " Using vimgrep to find stuff if ctags doesnot work
 " vimgrep /FunctionName/gjf *
@@ -51,7 +60,7 @@ let g:netrw_browse_split=4  " open in prior window
 let g:netrw_liststyle=3     " tree view
 "let g:netrw_list_hide=netrw_gitignore#Hide()
 "let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
- 
+
 
 nnoremap <leader>x *``cgn
 nnoremap <leader>X #``cgn
