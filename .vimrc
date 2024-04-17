@@ -21,6 +21,8 @@ set laststatus=2
 set noswapfile
 set showcmd
 set nowrap
+set ignorecase
+set smartcase
 
 " Man pages it is
 runtime ftplugin/man.vim
